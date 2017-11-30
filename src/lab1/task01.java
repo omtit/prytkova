@@ -2,19 +2,24 @@ package lab1;
 
 public class task01 {
     public static void main(String[] args) {
+        System.out.println("#1");
         System.out.println("+___+");
         System.out.println("|   |");
         System.out.println("|   |");
         System.out.println("+___+");
+        System.out.println("#2");
         System.out.println("#");
         System.out.println("##");
         System.out.println("###");
         System.out.println("####");
+        System.out.println("#3");
         System.out.println(" /\\ ");
         System.out.println("//\\\\");
         System.out.println("//\\\\");
         System.out.println(" ][ ");
+        System.out.println("#4");
         System.out.println("{ \"x\":15, \"y\":28.7 }");
+        System.out.println("#5");
         System.out.println("Три девицы под окном\n" +
                 "Пряли поздно вечерком.\n" +
                 "\"Кабы я была царица, —\n" +
@@ -29,6 +34,7 @@ public class task01 {
                 "Третья молвила сестрица, —\n" +
                 "Я б для батюшки-царя\n" +
                 "Родила богатыря\".");
+        System.out.println("#6");
         System.out.println("<!DOCTYPE html>\n" +
                 "<html>\n" +
                 "<head>\n" +

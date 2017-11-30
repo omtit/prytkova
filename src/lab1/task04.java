@@ -5,7 +5,14 @@ public class task04 {
 
     Scanner s = new Scanner(System.in);
     String a;
+    String b;
+    String c;
     a = s.nextLine();
+    b = s.nextLine();
+    c = s.nextLine();
     System.out.println("Программирование это " + a + "!");
+    System.out.println("Программирование это " + b + "!");
+    System.out.println("Программирование это " + c + "!");
+
 }
 }

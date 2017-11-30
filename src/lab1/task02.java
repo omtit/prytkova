@@ -7,8 +7,14 @@ public class task02 {
 
         Scanner s=new Scanner(System.in);
         String a;
+        String b;
+        String c;
         a=s.nextLine();
-        System.out.println("Мы стремимся к" + a);
+        b=s.nextLine();
+        c=s.nextLine();
+        System.out.println("Мы стремимся к " + a);
+        System.out.println("Мы стремимся к " + b);
+        System.out.println("Мы стремимся к " + c);
 
     }
 
