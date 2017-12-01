@@ -8,5 +8,9 @@ public class task09 {
         a = s.nextLine();
         System.out.println("SELECT first_name, last_name, group\n" +
                 "FROM students WHERE student_id = '" + a + "';");
+        String b;
+        b = s.nextLine();
+        System.out.println("SELECT first_name, last_name, group\n" +
+                "FROM students WHERE student_id = '" + b + "';");
     }
     }

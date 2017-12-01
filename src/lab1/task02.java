@@ -7,13 +7,13 @@ public class task02 {
 
         Scanner s=new Scanner(System.in);
         String a;
-        String b;
-        String c;
         a=s.nextLine();
-        b=s.nextLine();
-        c=s.nextLine();
         System.out.println("Мы стремимся к " + a);
+        String b;
+        b=s.nextLine();
         System.out.println("Мы стремимся к " + b);
+        String c;
+        c=s.nextLine();
         System.out.println("Мы стремимся к " + c);
 
     }
