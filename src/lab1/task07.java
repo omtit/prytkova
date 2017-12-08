@@ -7,7 +7,7 @@ public class task07 {
         Scanner s = new Scanner(System.in);
         double a;
         a = s.nextDouble();
-        System.out.printf("pyfxtybt: %.4f",a);
+        System.out.printf("округление: %.4f",a);
 
 
     }
