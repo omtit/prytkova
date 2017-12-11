@@ -6,6 +6,10 @@ public class task23 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         double a;
+      //  if (a==0){
+       //    System.out.println("уравнение не является квадратным");
+       //     return;
+        //}
         double b;
         double c;
         a=s.nextDouble();

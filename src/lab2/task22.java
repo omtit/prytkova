@@ -17,6 +17,6 @@ public class task22 {
         double force;
         force =mass*g*Math.cos(aInDeg*Math.PI/180);
         System.out.printf("%f", force);
-
+// если угол больше 90 градусов то 0
     }
 }
