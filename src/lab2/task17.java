@@ -5,20 +5,20 @@ import java.util.Scanner;
 public class task17 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        int velocity1;
-        velocity1 = s.nextInt();
+        double velocity1;
+        velocity1 = s.nextDouble();
         if (velocity1<0) {
             System.out.println("Скорость должна быть неотрицательна");
             return;
         }
-        int velocity2;
-        velocity2 = s.nextInt();
+        double velocity2;
+        velocity2 = s.nextDouble();
         if (velocity2<0) {
             System.out.println("Скорость должна быть неотрицательна");
             return;
         }
-        int distance;
-        distance = s.nextInt();
+        double distance;
+        distance = s.nextDouble();
         if (distance<0) {
             System.out.println("Расстояние должно быть неотрицательно");
             return;

@@ -5,12 +5,13 @@ import java.util.Scanner;
 public class task06 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        int base;
-        base = s.nextInt();
-        int height;
-        height = s.nextInt();
+        double base;
+        base = s.nextDouble();
+        double height;
+        height = s.nextDouble();
         if (base<=0) {
             System.out.println("Значение base должно быть положительным");
+            return;
 
         }
         if  (height <= 0) {
