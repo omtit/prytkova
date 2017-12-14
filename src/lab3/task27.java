@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class task27 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        int a = s.nextInt();
+        double a = s.nextDouble();
         if (-10 <= a && a <= 100) {
             if (a == -3 || a == 3 || a == 23 || a == 33 || a == 43 || a == 53 || a == 63 || a == 73 || a == 83 || a == 93) {
                 System.out.println(a + "'ий");
@@ -19,5 +19,8 @@ public class task27 {
         } else {
             System.out.println("Значение A должно быть в интервале [-10, 100]");
         }
+
+
+
     }
 }
