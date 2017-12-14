@@ -24,7 +24,7 @@ public class task08 {
              System.out.printf("Уравнение: %dx^2+%dx+%d=0 имеет один корень x=%.4f",a,b,c,x);
          }
          else {
-             System.out.println("Вещественных корней уравнения: "+a+"x^2+"+b+"+x+"+c+"=0 нет D=" +D);
+             System.out.println("Вещественных корней уравнения: "+a+"x^2+"+b+"x+"+c+"=0 нет D=" +D);
          }
     }
 }

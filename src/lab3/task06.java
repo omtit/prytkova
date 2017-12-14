@@ -7,16 +7,24 @@ public class task06 {
         Scanner s = new Scanner(System.in);
         double shipInKmH = s.nextDouble();
         double cometInMS = s.nextDouble();
-        if (shipInKmH<0) {
+        boolean error = false;
+        if (shipInKmH < 0) {
             System.out.println("Скорость корабля должна быть неотрицательна");
+            error = true;
         }
-        if (cometInMS<0) {
+        if (cometInMS < 0) {
             System.out.println("Скорость кометы должна быть неотрицательна");
+            error = true;
         }
-        if (shipInKmH*1000/3600> cometInMS){
-            System.out.println("Корабль догонит комету. Скорость кометы "+cometInMS+" м/с меньше скорости корабля "+shipInKmH+"км/ч" );
-        } else{
-            System.out.println("Комета улетит от корабля. Скорость корабля "+shipInKmH+" км/ч меньше скорости кометы "+cometInMS + "м/с");
+
+        if (error == true) {
+            return;
+        }
+
+        if (shipInKmH * 1000 / 3600 > cometInMS) {
+            System.out.println("Корабль догонит комету. Скорость кометы " + cometInMS + " м/с меньше скорости корабля " + shipInKmH + " км/ч");
+        } else {
+            System.out.println("Комета улетит от корабля. Скорость корабля " + shipInKmH + " км/ч меньше скорости кометы " + cometInMS + " м/с");
         }
     }
 }

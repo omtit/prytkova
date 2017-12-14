@@ -10,9 +10,9 @@ public class task02 {
         P = s.nextInt();
         Q =s.nextInt();
         if (P>Q){
-            System.out.println("Максимальное "+P+ " Минимальное "+ Q);
+            System.out.println("Максимальное "+P+ ", Минимальное "+ Q);
         } else{
-            System.out.println("Максимальное "+Q+ " Минимальное " +P);
+            System.out.println("Максимальное "+Q+ ", Минимальное " +P);
         }
     }
 }
