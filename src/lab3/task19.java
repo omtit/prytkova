@@ -10,7 +10,7 @@ public class task19 {
         if (x <= -2 && y >= 1) {
             System.out.println("Точка с координатами [" + x + "; " + y + ";] принадлежит множеству");
         } else {
-            System.out.println("не принадлежит");
+            System.out.println("Точка с координатами [" + x + "; " + y + ";]не принадлежит множеству");
         }
     }
 }
