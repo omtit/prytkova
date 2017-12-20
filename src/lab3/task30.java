@@ -19,7 +19,7 @@ public class task30 {
             System.out.println("Координата Y должна быть неотрицательной");
             return;
         }
-        if (xt >= xp1 && xt <= xp2 && yt >= yp1 && yt <= yp2) {
+        if ((xt-xp1)/(xp2-xp1)==(yt-yp1)/(yp2-yp1)) {
             System.out.println("Точка принадлежит прямой");
         } else {
             System.out.println("Точка не принадлежит прямой");

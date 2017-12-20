@@ -5,7 +5,7 @@ public class task02 {
         int a = 17;
 
         while (a<=47){
-            System.out.println(a);
+            System.out.print(a+" ");
             a=a+1;
 
 
