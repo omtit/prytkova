@@ -6,9 +6,12 @@ public class task09 {
         int r=7;
         while (a<10) {
             System.out.println(a +" x 7 = "+r);
-            a=a+1;
+            a++;
             r=a*7;
 
         }
+
+
+
     }
 }
