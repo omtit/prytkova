@@ -7,7 +7,7 @@ public class task17 {
         Scanner s = new Scanner(System.in);
         int a;
         int r =0;
-        int count=0;
+        int count=1;
         a= s.nextInt();
         while (a!=0) {
             r = a +r;
@@ -16,6 +16,6 @@ public class task17 {
             count = count+1;
 
         }
-        System.out.println(r +" "+ count);
+        System.out.println("Сумма чисел: "+r +", Количество чисел: "+ count);
     }
 }
