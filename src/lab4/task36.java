@@ -8,26 +8,25 @@ public class task36 {
         int a = s.nextInt();
         int b = s.nextInt();
         int count = 0;
-        int i =0;
+
 
         if (a < b) {
             while (a <= b) {
                 int r = a % 2;
                 if (r != 0) {
-
-                    while (i<=count)    {    System.out.print(".");
-                        }
-
+                    for (int i=0; i<count; i++)
+                        System.out.print(".");
 
                     System.out.print(a + "\n");
 
+                    count++;
                 }
                 a++;
-                count++;
 
             }
         }
 
     }
 }
+
 

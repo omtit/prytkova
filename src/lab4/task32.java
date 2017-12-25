@@ -22,10 +22,8 @@ public class task32 {
 
         for (int i = 1; i <= w; i++) {
             System.out.print(p);
-            if (i==w) {
-                System.out.print("\n");
-            }
         }
+        System.out.print("\n");
 
     }
     }}
