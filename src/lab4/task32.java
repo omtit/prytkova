@@ -8,6 +8,14 @@ public class task32 {
     String p = s.nextLine();
     int w = s.nextInt();
     int h = s.nextInt();
+    if (w<0) {
+        System.out.println("Значение W должно быть неотрицательно");
+        return;
+    }
+    if (h<0) {
+        System.out.println("Значение H должно быть неотрицательно");
+        return;
+    }
 
 
     for (int n = 1; n<=h; n++) {
