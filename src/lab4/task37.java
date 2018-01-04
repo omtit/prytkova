@@ -50,11 +50,11 @@ public class task37 {
         System.out.print("#");
         System.out.print("#");
         System.out.print("#");
-while () {
+while (w<0) {
     for (i=0; i<w; i++ )   {
         System.out.print("+");
     }
-    for (int j=w; j)
+    for (int j=w; j<0; j++){
 }
 
         System.out.println();
@@ -63,6 +63,7 @@ while () {
             System.out.print("+");
             i++;
         }
+        int j;
         j = 4;
         while (i < w) {
 
@@ -72,4 +73,4 @@ while () {
 
     }
 
-}
+}}
