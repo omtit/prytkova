@@ -21,56 +21,16 @@ public class task37 {
         if (h == 0) {
             return;
         }
-        int i = 0;
-        while (i < h) {
+
+        for (int j= 0; j<h;j++){
+        for (int i = w; i>j; i--) {
             System.out.print("+");
-            i++;
         }
-        System.out.print("+");
-        System.out.print("+");
-        System.out.print("+");
-        System.out.print("+");
-        System.out.print("#");
-        System.out.println();
-
-
-        i = 2;
-        while (i < h) {
-            System.out.print("+");
-            i++;
-        }
-        System.out.print("#");
-        System.out.print("#");
-
-        i = 3;
-        while (i < h) {
-            System.out.print("+");
-            i++;
-        }
-        System.out.print("#");
-        System.out.print("#");
-        System.out.print("#");
-while (w<0) {
-    for (i=0; i<w; i++ )   {
-        System.out.print("+");
-    }
-    for (int j=w; j<0; j++){
-}
-
-        System.out.println();
-        i = 1;
-        while (i < h) {
-            System.out.print("+");
-            i++;
-        }
-        int j;
-        j = 4;
-        while (i < w) {
-
+        for (int z= 0; z<j;  z++){
             System.out.print("#");
-            i++;
-        }
 
-    }
+        }
+        System.out.println();}
+
 
 }}
