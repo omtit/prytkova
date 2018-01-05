@@ -9,6 +9,17 @@ public class task40 {
         String s2 = s.nextLine();
         int w = s.nextInt();
         int h = s.nextInt();
+        if (w<0 ){
+            System.out.println("Значение W должно быть неотрицательно");
+            return;
+        }
+        if (h<0) {
+            System.out.println("Значение H должно быть неотрицательно");
+            return;
+        }
+        if (w==0||h==0){
+            return;
+        }
         int i = 1;
         while (i <= h) {
             if (i % 2 == 0) {

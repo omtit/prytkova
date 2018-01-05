@@ -26,6 +26,23 @@ public class task36 {
             }
         }
 
+       else if (a > b) {
+            count=0;
+            while (b <= a) {
+                int r = b % 2;
+                if (r != 0) {
+                    for (int i=0; i<count; i++)
+                        System.out.print(".");
+
+                    System.out.print(b + "\n");
+
+                    count++;
+                }
+                b++;
+
+            }
+        }
+
     }
 }
 

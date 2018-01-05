@@ -9,17 +9,33 @@ public class task39 {
         int q  = s.nextInt();
         int r = Math.abs((q - p)/2);
         int c = r+ Math.min(p,q);
-        while (p<q) {
+        if (p<q) {while (p<=q){
             if (p<c) {
                 System.out.print(p+"<");
             }
-            if (p>=c) {
+            else{
+                if (p==q) {
+                    System.out.print(p);
+                    return;
+                }
                 System.out.print(p+">");
             }
+
             p++;
+        }}
+        else {while (q<=p){
+            if (q<c) {
+                System.out.print(q+"<");
+            }
+            else{
+                if (p==q) {
+                    System.out.print(q);
+                    return;
+                }
+                System.out.print(q+">");
+            }
 
-
-        }
-        System.out.print(q);
+           q++;
+        }}
     }
 }
