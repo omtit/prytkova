@@ -27,7 +27,7 @@ public class task05 {
         arr[p]=t;
         int i = 0;
         while (i<arr.length){
-            System.out.println(arr[i]+" "+i);
+            System.out.print(arr[i]+" "+i+" ");
             i++;
         }
 
