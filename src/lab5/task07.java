@@ -10,18 +10,24 @@ public class task07 {
         int n = s.nextInt();
 
 
-        String[] b = new String[arr.length];
-        for (int i = arr.length - 1; i >= 0; i--) {
-            if (i + n >= arr.length) {
-                b[i + n - arr.length] = arr[i];
-            } else {
-                b[i + n] = arr[i];
-            }
+
+
+        int i =arr.length-1; // последняя ндекс в массиве
+        String t = arr[i];
+        while (i>0){
+            arr[i]=arr[i-n];
+
+
+            // System.out.print(i +" ");
+            i--;
+
         }
-        for (String i : b) {
-            System.out.print(i+" ");
+
+        arr[0]=t;
+        System.out.println(String.join(" ", arr));
         }
 
 
-    }
 }
+
+
