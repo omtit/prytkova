@@ -24,3 +24,4 @@ public class task01 {
         System.out.println(arr[a]);
     }
 }
+

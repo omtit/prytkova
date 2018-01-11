@@ -12,7 +12,14 @@ public class task11 {
         String b = s.nextLine();
         String[] top = a.split(" ");
         String[] left = b.split(" ");
-
+        if ("".equals(a)) {
+            System.out.println("Данные сверху отсутствуют");
+            return;
+        }
+        if ("".equals(b)) {
+            System.out.println("Данные слева отсутствуют");
+            return;
+        }
         System.out.print("  ");
         System.out.println(String.join(" ", top));
         for (int j = 0; j < left.length; j++) {
@@ -24,7 +31,12 @@ public class task11 {
                     System.out.print("  ");
                 }
             }
-            System.out.println("|");
+            System.out.println(" |");
         }
+        System.out.print("  ");
+        for (int n = 0; n < top.length; n++) {
+            System.out.print("--");
+        }
+
     }
 }
