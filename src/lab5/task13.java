@@ -14,7 +14,7 @@ public class task13 {
             for (int z = 0; z < arr.length; z++) {
                 //String t = arr[z];
 
-                if (n.equals(arr)) {
+                if (n.equals(arr[z] )&& z!=i) {
                     count++;
                 }
             }

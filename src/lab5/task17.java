@@ -12,12 +12,12 @@ public class task17 {
             System.out.println("Число B должно быть в интервале [0, размер массива)");
             return;
         }
-        int [] arr1 = new int[arr.length];
+        int [] arr1 = new int[arr.length]; //
         int i = 0;
         int count = 0;
         while (i!= arr.length) {
             arr1[i] = Integer.parseInt(arr[i]);
-            if (arr1[i]<b) {
+            if (arr1[i]<arr1[b]) {
                 count++;
 
             }

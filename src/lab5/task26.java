@@ -13,9 +13,7 @@ public class task26 {
         int count = 1;
         String t = arr[0];
         for (int j = 0; j != arr.length; j++) {
-            if (t.equals(arr[j])) {
-                //t = arr[j];
-            } else {
+            if (!t.equals(arr[j])) {
                 count++;
                 t = arr [j];
             }

@@ -15,7 +15,7 @@ public class task18 {
         System.out.println("Ход решения:");
         int min = mass[0];
         System.out.println("Начинаю с " + min);
-        int z = 0;
+        int z = 1;
         while (z != mass.length) {
             System.out.println("сравниваю " + min + " и " + mass[z]);
             if (min > mass[z]) {

@@ -1,5 +1,6 @@
 package lab5;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class task24 {
@@ -19,6 +20,7 @@ public class task24 {
             System.out.print(result[i]+" ");
             count=0;
         }
-       // System.out.println(result[i]+" "));
+
+        System.out.println(Arrays.toString(result));
     }
 }
