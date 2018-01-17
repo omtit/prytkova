@@ -11,6 +11,19 @@ public class task05 {
         String r ="abcdefwxyz";
         int ca = s.nextInt();
         int cb = s.nextInt();
+
+        if (ca<0 || ca> r.length()) {
+            System.out.println("Значение CA должно быть в интервале [0,длина строки)");
+            return;
+        }
+        if (cb<0 || cb> r.length()) {
+            System.out.println("Значение CB должно быть в интервале [0,длина строки)");
+            return;
+        }
+        if (ca>cb){
+            System.out.println("Значение CA должно быть меньше CB");
+            return;
+        }
         String str = r.substring(ca, cb+1);
         System.out.println(str);
     }

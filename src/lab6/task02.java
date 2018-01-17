@@ -12,7 +12,7 @@ public class task02 {
         String w = s.nextLine();
         int i = r.indexOf(w);
         if (i==-1){
-            System.out.println("error");
+            System.out.println("Значение отсутствует в строке");
             return;
         }
         int l =r.length();

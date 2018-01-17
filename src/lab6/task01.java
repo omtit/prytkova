@@ -12,9 +12,9 @@ public class task01 {
         String w = s.nextLine();
         boolean fact = r.contains(w);
         if (fact) {
-            System.out.println("yes");
+            System.out.println("Содержится");
         } else {
-            System.out.println("no ");
+            System.out.println("Не содержится");
         }
     }
 }
