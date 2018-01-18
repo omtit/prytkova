@@ -15,8 +15,7 @@ public class task13 {
         while (z < str.length()) {
             int i = str.indexOf(n, z);
 
-
-
+            System.out.print(i + " ");
             z++;
         }
 
