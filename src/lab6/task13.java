@@ -12,11 +12,10 @@ public class task13 {
             return;
         }
         int z = 0;
-        while (z < str.length()) {
-            int i = str.indexOf(n, z);
+        while (z !=-1) {
+            z = str.indexOf(n, z+1);
 
-            System.out.print(i + " ");
-            z++;
+            System.out.print(z + " ");
         }
 
 

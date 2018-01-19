@@ -1,7 +1,9 @@
 package lab7;
 
+import java.awt.*;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Scanner;
 
 /**
@@ -18,17 +20,17 @@ public class task01 {
             try {
                 Scanner s = new Scanner(target);
                 String line;
-                if (!s.hasNext()){
+                if (!s.hasNext()) {
                     System.out.println(" Файл пуст");
                 }
-                if (s.hasNext()){
-                    line= s.nextLine();
+                if (s.hasNext()) {
+                    line = s.nextLine();
                     System.out.print(line);
                 }
                 while (s.hasNext()) {
 
                     line = s.nextLine();
-                    System.out.print(", "+line);
+                    System.out.print(", " + line);
 
                 }
                 System.out.println();
@@ -39,8 +41,9 @@ public class task01 {
 
             } catch (FileNotFoundException e) {
                 System.out.println("Файл не существует" + target.getAbsolutePath());
+
+                i++;
             }
-            i++;
         }
     }
 }

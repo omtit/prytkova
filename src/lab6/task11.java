@@ -21,6 +21,6 @@ public class task11 {
         String str2 = str1.replace(last, newone);
 
 
-        System.out.println(str2.trim()); // удаляет пробелы в начаде и конце
+        System.out.println(str1.substring(0,str1.length()-1).trim()); // удаляет пробелы в начаде и конце
     }
 }
