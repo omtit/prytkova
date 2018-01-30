@@ -1,19 +1,15 @@
 package lab7;
 
-import java.awt.*;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.IOException;
+import java.util.Arrays;
 import java.util.Scanner;
 
-/**
- * Created by pro-27 on 13.01.2018.
- */
-public class task01 {
+public class task04 {
     public static void main(String[] args) {
         int i = 1;
-        while (i <= 6) {
-            String filename = "res/task6175/test" + i + ".txt";
+        while (i <= 5) {
+            String filename = "res/task4642/test" + i + ".txt";
 
             File target = new File(filename);
             System.out.println("Открываем файл " + target.getAbsolutePath());
@@ -24,14 +20,21 @@ public class task01 {
                     System.out.println("Файл пуст");
 
                 }
-                if (s.hasNext()) {
-                    line = s.nextLine();
-                    System.out.print(line);
-                }
+               // if (s.hasNext()) {
+               //     line = s.nextLine();
+               //     System.out.print(line);
+               // }
+                int z = 0;
                 while (s.hasNext()) {
-
                     line = s.nextLine();
-                    System.out.print(", " + line);
+                    String[] arr = line.split(" ");
+                    Arrays.sort(arr);
+                    //String str = Arrays.toString(arr);
+                    //str.trim());
+
+
+                  System.out.println(String.join(" ", arr));
+
 
                 }
                 System.out.println();
@@ -49,3 +52,4 @@ public class task01 {
         }
     }
 }
+
