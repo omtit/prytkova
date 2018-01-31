@@ -24,7 +24,29 @@ public class task01 {
                 String cy = mass[1];
                 String r = mass[2];
                 String sw = mass[3];
+                int r1 = Integer.parseInt(r);
+                int cx1= Integer.parseInt(cx);
+                int cy1 = Integer.parseInt(cy);
+                int sw1 = Integer.parseInt(sw);
+                boolean error = false;
+                if(r1>cx1||r1>cy1){
+                    System.out.println("Левая точка круга должна иметь неотрицательные координаты");
+                    error = true;
 
+                }
+                if (sw1>r1*2) {
+                    System.out.println("Толщина обводки должна быть меньше диаметра круга");
+                    error=true;
+                }
+                if (cx1>800) {
+                    System.out.println("Правая точка круга должна быть в пределах рисунка");
+                    error=true;
+                }
+                if (cy1>600) {
+                    System.out.println("Нижняя точка круга должна быть в пределах рисунка");
+                    error= true;
+                }
+                if (error!=true ){
 
                 String filename = "out/task1"+i+".html";
 
@@ -46,7 +68,7 @@ public class task01 {
 
                 Desktop.getDesktop().open(new File(filename));
                 i++;
-            }
+            }}
             s.close();
 
         } catch (FileNotFoundException e) {

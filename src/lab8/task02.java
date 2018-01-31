@@ -24,6 +24,29 @@ public class task02 {
                 String y = mass[1];
                 String w = mass[2];
                 String h = mass[3];
+                int x1 = Integer.parseInt(x);
+                int y1 = Integer.parseInt(y);
+                int w1 = Integer.parseInt(w);
+                int h1 = Integer.parseInt(h);
+                boolean error = false;
+                if(w1<=0){
+                    System.out.println("Ширина прямоугольника должна быть положительной");
+                    error = true;
+
+                }
+                if (h1<=0) {
+                    System.out.println("Высота прямоугольника должна быть положительной");
+                    error=true;
+                }
+                if (x1>=800 || x1+w1>=800) {
+                    System.out.println("Правая сторона прямоугольника должна быть в пределах рисунка");
+                    error=true;
+                }
+                if (y1>=600 || y1+h1>=600 ) {
+                    System.out.println("Нижняя сторона прямоугольника должна быть в пределах рисунка");
+                    error= true;
+                }
+                if(error!=true){
 
 
                 String filename = "out/task1"+i+".html";
@@ -35,7 +58,7 @@ public class task02 {
                         "<meta charset=\"utf-8\"/>\n" +
                         "<head/>\n" +
                         "<body>\n" +
-                        "<h1>Мой второй векторный рисунок</h1>\n" +
+                        "<h1>Мой 2 векторный рисунок</h1>\n" +
                         "\n" +
                         "<svg width=\"800\" height=\"600\">\n" +
                         "\t<rect x=\"" + x + "\" y=\"" + y +"\" width=\""+w+"\" height=\""+h+"\"  stroke=\"blue\" stroke-width=\"  2  \" fill=\"red\" />\n" +
@@ -46,7 +69,7 @@ public class task02 {
 
                 Desktop.getDesktop().open(new File(filename));
                 i++;
-            }
+            }}
             s.close();
 
         } catch (FileNotFoundException e) {
