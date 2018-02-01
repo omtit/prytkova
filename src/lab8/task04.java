@@ -55,28 +55,76 @@ public class task04 {
                 //    error= true;
                 //}
                 //if(error!=true){
-                int x33;
-                int y33;
-                int w33;
-                int h33;
+                int x33 = 0;
+                int y33 = 0;
+                int w33 = 0;
+                int h33 = 0;
+
+
                 if (x22 > x11) {
                     x33 = x22;
-                    w33 = (x11+w11)-x22;
-                }else{
-                    x33 = x11;
-                    w33 = (x22+w22)-x11;
+                    if (x22 + w22 > x11 + w11) {
+                        w33 = (x11 + w11) - x22;
+                    } else {
+                        w33 = w22;
+                    }
                 }
+
+
+                if (x11 > x22) {
+                    x33 = x11;
+                    if (x11 + w11 > x22 + w22) {
+                        w33 = (x22 + w22) - x11;
+                    } else {
+                        w33 = w11;
+                    }
+                }
+
                 if (y22 > y11) {
                     y33 = y22;
-                    h33 = y11+h11-y22;
-                } else {
+                    if (y22 + h22 > y11 + h11) {
+                        h33 = y11 + h11 - y22;
+                    } else {
+                        h33 = h22;
+                    }
+                }
+                if (y11 > y22) {
                     y33 = y11;
-                    h33=y22+h22-y11;
+                    if (y11 + h11 > y22 + h11) {
+                        h33 = y22 + h22 - y11;
+                    } else {
+                        h33 = h11;
+                    }
+                }
+                if (x11 == x22) {
+                    x33 = x11;
+                    if (x11 + w11 == x22 + w22) {
+                        w33 = w11;
+                    }
+                    if (x11 + w11 > x22 + w22) {
+                        w33 = (x22 + w22) - x11;
+                    }
+                    if (x11 + w11 < x22 + w22) {
+                        w33 = (x11 + w11) - x22;
+
+                    }
+                }
+                if (y11==y22){
+                    y33=y11;
+                    if (y11+h11==y22+h22) {
+                        h33=h11;
+                    }
+                    if (y11+h11>y22+h22){
+                        h33 = (y22 + h22) - y11;
+                    }
+                    if (y11+h11<y22+h22){
+                        h33 = (y11 + h11) - y22;
+
+                    }
                 }
 
 
-
-                String x3= Integer.toString(x33);
+                String x3 = Integer.toString(x33);
                 String y3 = Integer.toString(y33);
                 String w3 = Integer.toString(w33);
                 String h3 = Integer.toString(h33);
