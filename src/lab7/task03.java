@@ -78,7 +78,7 @@ public class task03 {
         File target2 = new File(filename2);
         System.out.println("Открываем файл " + target2.getAbsolutePath());
         try {
-            Scanner s = new Scanner(target1);
+            Scanner s = new Scanner(target2);
             String line;
             if (!s.hasNext()) {
                 System.out.println("Файл пуст");

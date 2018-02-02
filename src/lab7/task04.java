@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.StringJoiner;
 
 public class task04 {
     public static void main(String[] args) {
@@ -32,8 +33,16 @@ public class task04 {
                     //String str = Arrays.toString(arr);
                     //str.trim());
 
+boolean error = false;
+                    int count= 0;
+                    if (arr[i].isEmpty()){
+                        error=true;
 
-                  System.out.println(String.join(" ", arr));
+                    }
+                    if (error=false){
+                        count++;}
+
+                  System.out.println(count);
 
 
                 }
