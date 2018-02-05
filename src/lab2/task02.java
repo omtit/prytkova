@@ -13,6 +13,6 @@ public class task02 {
         }
         double area;
         area = 6 * Math.pow(edge,2);
-        System.out.printf("%.4f", area);
+        System.out.printf("%.0f", area);
     }
 }

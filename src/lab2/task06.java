@@ -21,6 +21,6 @@ public class task06 {
 
         double area;
         area = (base*height)/2;
-        System.out.printf("%.4f",area);
+        System.out.printf("%.2f",area);
             }
 }

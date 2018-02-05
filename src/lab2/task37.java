@@ -25,6 +25,6 @@ public class task37 {
         volume = volume1+volume2;
         double temperature;
         temperature= (temperature1*volume1+temperature2*volume2)/volume;
-        System.out.printf("%.4f\n%.4f",volume,temperature);
+        System.out.printf("%.0f\n%.4f",volume,temperature);
     }
 }

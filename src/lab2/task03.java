@@ -13,7 +13,7 @@ public class task03 {
         }
         double volume;
         volume = Math.pow(edge, 3);
-        System.out.printf("%.3f",volume);
+        System.out.printf("%.0f",volume);
     }
     }
 

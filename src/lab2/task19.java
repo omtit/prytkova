@@ -21,6 +21,6 @@ public class task19 {
         acceleration = s.nextInt();
         double distance;
         distance = initialVelocity*time+(acceleration*Math.pow(time,2))/2;
-        System.out.printf("%.4f", distance);
+        System.out.printf("%.2f", distance);
     }
 }
