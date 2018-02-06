@@ -14,16 +14,19 @@ public class task13 {
             for (int z = 0; z < arr.length; z++) {
                 //String t = arr[z];
 
-                if (n.equals(arr[z] )&& z!=i) {
+                if (n.equals(arr[z]) && z != i) {
                     count++;
                 }
             }
             i++;
         }
-        System.out.println("Повторений: " + count);
 
+
+        if (count == 0) {
+            System.out.println(" повторений нет");
+        } else {
+            System.out.println("Повторения есть: " + count);
+        }
 
     }
-    //    System.out.println(" повторений нет");
 }
-

@@ -74,4 +74,75 @@ public class Lab05 {
         return Math.max(Math.max(a ,b),c);
     }
 
+    public static boolean task1999(int x, int y){
+        if (x <= -2 && y >= 1) {
+            return true;
+           // System.out.println("Точка с координатами [" + x + "; " + y + ";] принадлежит множеству");
+        } else {
+            //System.out.println("Точка с координатами [" + x + "; " + y + ";]не принадлежит множеству");
+            return false;
+        }
+    }
+
+    public static boolean task4042(double x, double y){
+        if (-2<=y && y<=1.5) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public static boolean task6351(double x, double y){
+        if (1<=x && x<=2 &&  y<=4) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public static boolean task5382(double x, double y){
+        if (1<=x  && 2<=y && y<=4) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public static boolean task7088(double x, double y){
+        if (x >= 1 && y <= -1 || x >= 2 && y >= 0){
+            return true;}
+
+        else {
+            return false;
+        }
+
+    }
+
+    public static boolean task7250(double x, double y){
+        if (x >= 2 && y >= 1 || x >= 2 && y <= -1.5){
+            return true;}
+
+        else {
+            return false;
+        }
+    }
+
+    public static boolean task6740(double x, double y){
+        if (x >= 1 && x <= 3 && y <= -1 && y>= -2){
+            return true;}
+
+        else {
+            return false;
+        }
+    }
+
+    public static boolean task9038(double x, double y){
+        if (y >= 0.5 && y <= 1.5 || x >= 2 ){
+            return true;}
+
+        else {
+            return false;
+        }
+    }
+
 }

@@ -20,4 +20,16 @@ public class Lab08 {
         else{return str;}
     }
 
+    public static boolean task7491(String w){
+        String r ="abcdefwxyz";
+        boolean fact = r.contains(w);
+        if (fact) {
+            return true;
+            //System.out.println("Содержится");
+        } else {
+            //System.out.println("Не содержится");
+            return false;
+        }
+    }
+
 }

@@ -48,4 +48,26 @@ public class Lab07 {
         }
         return count;
     }
+
+    public static boolean task4515(String data){
+        String[] arr = data.split(" ");
+        int i = 0;
+        int count = 0;
+        while (i < arr.length) {
+            String n = arr[i];
+            for (int z = 0; z < arr.length; z++) {
+                  if (n.equals(arr[z]) && z != i) {
+                    count++;
+                }
+            }
+            i++;
+        }
+
+
+        if (count == 0) {
+            return false;
+        } else {
+            return true;
+        }
+    }
 }
