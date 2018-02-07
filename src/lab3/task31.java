@@ -13,11 +13,25 @@ public class task31 {
             System.out.println("Значение A должно быть меньше значения B");
             return;
         }
-        if (A1<=B2 && B1>=A2){
-            System.out.println("пересекаются");
+        if (A1<A2 && B1<B2){
+            System.out.println("пересекаются ("+A2+";"+B1+")");
+            return;
     }
-    else {
+    if (A1<A2 && B2<B1){
+        System.out.println("пересекаются ("+A2+";"+B2+")");
+        return;
+
+    }
+    if (A2<A1 && B2<B1){
+        System.out.println("пересекаются ("+A1+";"+B2+")");
+        return;
+    }
+    if (A2<A1 && B1<B2){
+        System.out.println("пересекаются ("+A1+";"+B1+")");
+        return;
+    }
+
         System.out.println("не пересекаются");
+
     }
-}
 }
