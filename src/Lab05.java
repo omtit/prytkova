@@ -145,4 +145,58 @@ public class Lab05 {
         }
     }
 
+    public static StringBuilder task8518(StringBuilder sb, String x){
+        String S = "a\nb\nd\ne\nf\ng\nh";
+
+        if (x.equals("a")) {
+            sb.append("a+").append("\n");
+        } else {
+            sb.append("a").append("\n");
+
+        }
+        if (x.equals("b")) {
+            sb.append("b+").append("\n");
+        } else {
+            sb.append("b").append("\n");
+
+        }
+        if (x.equals("c")) {
+            sb.append("c+").append("\n");
+        } else {
+            sb.append("c").append("\n");
+
+        }
+        if (x.equals("d")) {
+            sb.append("d+").append("\n");
+        } else {
+            sb.append("d").append("\n");
+
+        }
+        if (x.equals("e")) {
+            sb.append("e+").append("\n");
+        } else {
+            sb.append("e").append("\n");
+
+        }
+        if (x.equals("f")) {
+            sb.append("f+").append("\n");
+        } else {
+            sb.append("f").append("\n");
+
+        }
+        if (x.equals("g")) {
+            sb.append("g+").append("\n");
+        } else {
+            sb.append("g").append("\n");
+
+        }
+        if (x.equals("h")) {
+            sb.append("h+").append("\n");
+        } else {
+            sb.append("h").append("\n");
+
+        }
+        return sb;
+    }
+
 }

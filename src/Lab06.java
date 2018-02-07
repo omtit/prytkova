@@ -205,5 +205,149 @@ public class Lab06 {
         return sb;
     }
 
+//    public static StringBuilder task3550(StringBuilder sb, int a) {
+//        //int a = 1;
+//        int r = 7;
+//        while (a < 10) {
+//            sb.append(a).append(" x 7 = ").append(r).append("\n");
+//            a++;
+//            r = a * 7;
+//        }
+//        return sb;
+//    }
 
+    public static void task6572(StringBuilder sb, int a, int b){
+        int count=0;
+        if (a < b) {
+            while (a <= b) {
+                int r = a % 2;
+                if (r != 0) {
+                    for (int i=0; i<count; i++) {
+                        System.out.print(".");
+                    }
+
+                    System.out.print(a + "\n");
+
+                    count++;
+                }
+                a++;
+
+            }
+        }
+
+        else if (a > b) {
+            count=0;
+            while (b <= a) {
+                int r = b % 2;
+                if (r != 0) {
+                    for (int i=0; i<count; i++){
+                        System.out.print(".");}
+
+                   System.out.print(b + "\n");
+                       count++;
+                }
+                b++;
+
+            }
+        }
+
+    }
+
+    public static StringBuilder task2084(StringBuilder sb, int a, int b){
+        if (a < b) {
+            while (a <= b) {
+
+                if (a % 2 != 0) {
+                    if (a == b|| b-a==1) {
+                        System.out.print(a);
+                        break;
+                    }
+                    System.out.print(a+",");
+                }
+                a++;
+
+            }
+
+        }
+        else {
+            while (b<=a){
+                if (a % 2 != 0) {
+                    if (a == b|| a-b==1) {
+                        System.out.print(a);
+                       break;}
+
+                    System.out.print(a+",");
+
+                }
+
+                a--;}
+    }
+        System.out.println();
+    return sb;
 }
+
+public static StringBuilder task5411(StringBuilder sb, int p, int q){
+    int r = Math.abs((q - p)/2);
+    int c = r+ Math.min(p,q);
+    if (p<q) {while (p<=q){
+        if (p<c) {
+            System.out.print(p+"<");
+        }
+        else{
+            if (p==q) {
+                System.out.print(p);
+                break;
+            }
+            System.out.print(p+">");
+        }
+
+        p++;
+    }}
+    else {while (q<=p){
+        if (q<c) {
+            System.out.print(q+"<");
+        }
+        else{
+            if (p==q) {
+                System.out.print(q);
+                break;
+            }
+            System.out.print(q+">");
+        }
+
+        q++;
+    }}
+    System.out.println();
+    return sb;
+}
+
+public static StringBuilder task7585(StringBuilder sb, int x){
+    int a = 10;
+    int b = 20;
+    while (a <= b) {
+        if (x == a) {
+            sb.append(x).append("+").append("\n");
+        } else {
+            sb.append(a).append("\n");
+        }
+        a = a + 1;
+    }
+    return sb;
+}
+
+public static StringBuilder task8770(StringBuilder sb, int x){
+    int a = 30;
+    int b = 40;
+    while (a <= b) {
+        if (x == a) {
+            sb.append(x).append("+").append("\n");
+        } else {
+            sb.append(a).append("-").append("\n");
+        }
+        a = a + 1;
+    }
+    return sb;
+}
+}
+
+

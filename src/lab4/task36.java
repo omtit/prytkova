@@ -14,8 +14,9 @@ public class task36 {
             while (a <= b) {
                 int r = a % 2;
                 if (r != 0) {
-                    for (int i=0; i<count; i++)
+                    for (int i=0; i<count; i++) {
                         System.out.print(".");
+                    }
 
                     System.out.print(a + "\n");
 
@@ -31,8 +32,9 @@ public class task36 {
             while (b <= a) {
                 int r = b % 2;
                 if (r != 0) {
-                    for (int i=0; i<count; i++)
+                    for (int i=0; i<count; i++) {
                         System.out.print(".");
+                    }
 
                     System.out.print(b + "\n");
 
