@@ -12,7 +12,7 @@ public class Lab12Task7649 {
 
        Step3762();
         Step2324();
- //       Step3550();
+       Step3550();
         Step6572();
         Step2084();
 
@@ -87,18 +87,18 @@ public class Lab12Task7649 {
         }
     }
 
-//    private static void Step3550() {
-//        System.out.println();
-//        System.out.println("3550");
-//        int[] in3550 = {2, 3, -13, 0, 7, 11, 1027};
-//        for (int i = 0; i < in3550.length; i++) {
-//            StringBuilder sb3550 = Lab06.task3550(
-//                    new StringBuilder()
-//                            .append("@"), in3550[i])
-//                    .append("#");
-//            System.out.println(sb3550.toString());
-//        }
-//    }
+    private static void Step3550() {
+        System.out.println();
+        System.out.println("3550");
+        int[] in3550 = {2, 3, -13, 0, 7, 11, 1027};
+        for (int i = 0; i < in3550.length; i++) {
+            StringBuilder sb3550 = Lab06.task3550(
+                    new StringBuilder()
+                            .append("@"), in3550[i])
+                    .append("#");
+            System.out.println(sb3550.toString());
+        }
+    }
 
     private static void Step6572() {
         System.out.println();

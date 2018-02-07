@@ -60,6 +60,17 @@ public class Lab02 {
         return Math.sqrt(Math.pow(x2, 2) + Math.pow(x1, 2));
     }
 
+    public static double task9020(int x) throws Exception{
+
+        if (61-x<0) {
+            throw new Exception("Подкоренное выражение должно быть неотрицательным");
+
+        }
+        double result;
+        result = 3*Math.sqrt(61-x);
+       return result;
+    }
+
 
 
 }

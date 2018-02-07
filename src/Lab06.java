@@ -205,16 +205,16 @@ public class Lab06 {
         return sb;
     }
 
-//    public static StringBuilder task3550(StringBuilder sb, int a) {
-//        //int a = 1;
-//        int r = 7;
-//        while (a < 10) {
-//            sb.append(a).append(" x 7 = ").append(r).append("\n");
-//            a++;
-//            r = a * 7;
-//        }
-//        return sb;
-//    }
+    public static StringBuilder task3550(StringBuilder sb, int a) {
+        //int a = 1;
+        int r = 7;
+        while (a < 10) {
+            sb.append(a).append(" x 7 = ").append(r).append("\n");
+            a++;
+            r = a * 7;
+        }
+        return sb;
+    }
 
     public static void task6572(StringBuilder sb, int a, int b){
         int count=0;
@@ -291,7 +291,7 @@ public static StringBuilder task5411(StringBuilder sb, int p, int q){
     int c = r+ Math.min(p,q);
     if (p<q) {while (p<=q){
         if (p<c) {
-            System.out.print(p+"<");
+            sb.append(p+"<");
         }
         else{
             if (p==q) {
