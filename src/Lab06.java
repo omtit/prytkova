@@ -122,4 +122,88 @@ public class Lab06 {
         return r;
     }
 
+    public static String task2475() {
+        int a = 100;
+        int b = 500;
+        int r = 0;
+        System.out.println("Ход решения: ");
+        while (a <= b) {
+            r = r + a;
+            System.out.print(" " + r);
+
+            a = a + 1;
+
+        }
+        return "\n ответ:" + r;
+
+
+    }
+
+    public static String task5951() {
+        double a = 20;
+        double r = 0;
+        System.out.print("Ход решения: ");
+        while (a <= 40) {
+
+            System.out.printf("%.0f+%.0f=", r, Math.pow(a, 3));
+            r = r + Math.pow(a, 3);
+            a++;
+        }
+        return "\nOтвет: " + r;
+    }
+
+    public static String task8696() {
+        int a = 100;
+        int b = 1000;
+        int count = 0;
+        System.out.print("Ход решения:");
+        while (a <= b) {
+
+            if (a % 13 == 0) {
+                System.out.print(a + "+ ");
+                count++;
+            } else {
+                System.out.print(a + " ");
+
+            }
+            a++;
+        }
+        return "\nОтвет: " + count;
+    }
+
+    public static String task2324(String data) {
+        String[] s = data.split(" ");
+        int[] a = new int[s.length];
+
+        int r = 0;
+        int count = 0;
+        for (int i = 0; i < s.length; i++) {
+
+            a[i] = Integer.parseInt(s[i]);
+            r = a[i] + r;
+            count++;
+            if (a[i] == 0) {
+                break;
+            }
+
+        }
+        return "Сумма чисел: " + r + ", Количество чисел: " + count;
+    }
+
+    public static StringBuilder task3762(StringBuilder sb) {
+        int a = 1;
+        int r = 453;
+        int b = 453;
+
+
+        while (a <= 20) {
+            sb.append(a).append("   ").append(r).append("\n");
+            a = a + 1;
+            r = a * b;
+
+        }
+        return sb;
+    }
+
+
 }

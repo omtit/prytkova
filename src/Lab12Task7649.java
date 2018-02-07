@@ -6,12 +6,12 @@ public class Lab12Task7649 {
     public static void main(String[] args) {
         Step8495();
         Step1315();
-//        Step2475();
-//        Step5951();
-//        Step8696();
-//
-//        Step3762();
-//        Step2324();
+        Step2475();
+        Step5951();
+        Step8696();
+
+       Step3762();
+        Step2324();
 //        Step3550();
 //        Step6572();
 //        Step2084();
@@ -47,46 +47,46 @@ public class Lab12Task7649 {
         System.out.println(sb1315);
     }
 
-//
-//    private static void Step8696() {
-//        System.out.println();
-//        System.out.println("8696");
-//        System.out.println(Lab06.task8696());
-//    }
-//
-//    private static void Step3762() {
-//        System.out.println();
-//        System.out.println("3762");
-//        String result3762 = Lab06.task3762(new StringBuilder()).toString();
-//        System.out.println(result3762);
-//    }
-//
-//    private static void Step2475() {
-//        System.out.println();
-//        System.out.println("2475");
-//        System.out.println(Lab06.task2475());
-//    }
-//
-//    private static void Step2324(){
-//        System.out.println();
-//        System.out.println("2324");
-//        String[] in2324 = {
-//            "1 2 3 4 5 0",
-//            "0",
-//            "-1 -2 0",
-//            "1 1 1 1 1 1 1 1 1 1 1 1 0"};
-//        String[] out2324 = {
-//            "Сумма чисел: 15, Количество чисел: 6",
-//            "Сумма чисел: 0, Количество чисел: 1",
-//            "Сумма чисел: -3, Количество чисел: 3",
-//            "Сумма чисел: 12, Количество чисел: 13"};
-//        for (int i = 0; i < in2324.length; i++)
-//        {
-//            String result = Lab06.task2324(in2324[i]);
-//            System.out.printf("#%s\n>%s\n", result, out2324[i]);
-//        }
-//    }
-//
+
+    private static void Step8696() {
+        System.out.println();
+        System.out.println("8696");
+        System.out.println(Lab06.task8696());
+    }
+
+    private static void Step3762() {
+        System.out.println();
+        System.out.println("3762");
+        String result3762 = Lab06.task3762(new StringBuilder()).toString();
+        System.out.println(result3762);
+    }
+
+    private static void Step2475() {
+        System.out.println();
+        System.out.println("2475");
+        System.out.println(Lab06.task2475());
+    }
+
+    private static void Step2324(){
+        System.out.println();
+        System.out.println("2324");
+        String[] in2324 = {
+            "1 2 3 4 5 0",
+            "0",
+            "-1 -2 0",
+            "1 1 1 1 1 1 1 1 1 1 1 1 0"};
+        String[] out2324 = {
+            "Сумма чисел: 15, Количество чисел: 6",
+            "Сумма чисел: 0, Количество чисел: 1",
+            "Сумма чисел: -3, Количество чисел: 3",
+            "Сумма чисел: 12, Количество чисел: 13"};
+        for (int i = 0; i < in2324.length; i++)
+        {
+            String result = Lab06.task2324(in2324[i]);
+            System.out.printf("#%s\n>%s\n", result, out2324[i]);
+        }
+    }
+
 //    private static void Step3550() {
 //        System.out.println();
 //        System.out.println("3550");
@@ -289,10 +289,10 @@ public class Lab12Task7649 {
 //            System.out.println(result);
 //        }
 //    }
-//
-//    private static void Step5951() {
-//        System.out.println();
-//        System.out.println("5951");
-//        System.out.println(Lab06.task5951());
-//    }
+
+    private static void Step5951() {
+        System.out.println();
+        System.out.println("5951");
+        System.out.println(Lab06.task5951());
+    }
 }
