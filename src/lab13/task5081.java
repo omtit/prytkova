@@ -9,7 +9,7 @@ public class task5081 {
     public static void main(String[] args) {
         int i = 1;
 
-        while (i <= 4) {
+        while (i <= 8) {
             String filename = "res/task5081/test" + i + ".txt";
 
             File target = new File(filename);
@@ -44,10 +44,7 @@ public class task5081 {
             res = summ(data);
             out =Integer.toString(res);
 
-//            while (s.hasNext()) {
-//                String data = s.nextLine();
-//                res = summ(data);
-//                out = Integer.toString(res);
+
 //            }
             return out;
         } else {

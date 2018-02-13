@@ -14,9 +14,8 @@ public class Lab07 {
             summ = summ + a[i];
 
         }
-        double result = summ / (s1.length);
 
-        return result;
+        return summ / (s1.length);
     }
 
     public static int task4283(int k, String data) {
