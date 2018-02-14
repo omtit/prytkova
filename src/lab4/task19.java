@@ -9,12 +9,12 @@ public class task19 {
         int count1 = 0;
         int count2 = 0;
 
-       while (a>199 || a<83) {
-           if (a<83) {
+       while (a>=199 || a<=83) {
+           if (a<=83) {
                count1++;
                a=s.nextInt();
            }
-           if (a>199) {
+           if (a>=199) {
                count2++;
                a=s.nextInt();
            }

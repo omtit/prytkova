@@ -9,6 +9,7 @@ public class task05 {
         int A = s.nextInt();
         if (A < 0) {
             System.out.println("Значение A должно быть неотрицательным");
+            return;
         }
         int i = 0;
         System.out.print("\"");

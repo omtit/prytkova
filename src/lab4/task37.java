@@ -26,7 +26,7 @@ public class task37 {
         for (int i = w; i>j; i--) {
             System.out.print("+");
         }
-        for (int z= 0; z<j;  z++){
+        for (int z= 0; z<j && z<w;  z++){
             System.out.print("#");
 
         }

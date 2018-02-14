@@ -6,6 +6,13 @@ public class task33 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int w = s.nextInt();
+        if(w==0){
+            return;
+        }
+        if(w<0){
+            System.out.println("Значение W должно быть неотрицательно");
+            return;
+        }
         System.out.print("+");
         for ( int i = 2; i<w; i++) {
              System.out.print("-");
