@@ -63,8 +63,9 @@ public class Task3185example {
         Point p2 = null;
         try {
             System.out.println(p1.distanceTo(p2));
-        } catch (IllegalArgumentException ex){
+            } catch (IllegalArgumentException ex){
             System.out.println(ex.getMessage());
+
         }
     }
 }

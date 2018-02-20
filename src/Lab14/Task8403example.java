@@ -41,5 +41,6 @@ public class Task8403example {
         p.x = 11;
         p.y = 23;
         System.out.println(p.distanceTo(11,13));
+        System.out.println(p.distanceTo(11,13));
     }
 }

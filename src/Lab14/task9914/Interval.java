@@ -14,7 +14,7 @@ public class Interval {
             throw new IllegalStateException ("Корректность интервала была нарушена");
         }
         if (c.a>c.b){
-            throw new IllegalArgumentException (" Некорректный интервал");
+            throw new IllegalArgumentException ("Некорректный интервал");
         }
         if (b<c.a){
             return false;
