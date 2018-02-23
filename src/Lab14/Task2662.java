@@ -1,4 +1,4 @@
-package jfgjsgj;
+package Lab14;
 
 import Lab14.task2662.Interval;
 

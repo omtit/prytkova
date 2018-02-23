@@ -1,6 +1,6 @@
-package jfgjsgj;
+package Lab14;
 
-import Lab14.task1953.*;
+import Lab14.task1953.Circle;
 
 /**
  * @author akryukov
@@ -10,7 +10,7 @@ public class Task1953 {
     public static void main(String[] args) {
         Step1();
         Step2();
-        Step3();
+//        Step3();
         Step4();
     }
 
@@ -24,17 +24,17 @@ public class Task1953 {
         System.out.printf("%.4f\n", c.area());
     }
 
-    private static void Step3(){
-        Circle c = new Circle(100, 120, 17);
-        Interval px = c.getProjectionX();
-        Interval py = c.getProjectionY();
-        System.out.println(px.print());
-        System.out.println(py.print());
-    }
+//    private static void Step3(){
+//        Circle c = new Circle(100, 120, 17);
+//        Interval px = c.getProjectionX();
+//        Interval py = c.getProjectionY();
+//        System.out.println(px.print());
+//        System.out.println(py.print());
+//    }
 
     private static void Step4(){
         Circle c = new Circle(100, 120, 31);
-        System.out.println(c.getProjectionX().print());
+        System.out.println(c.getProjectionX());
         System.out.println(c.getProjectionY().print());
     }
 }
