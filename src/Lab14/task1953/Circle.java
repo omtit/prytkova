@@ -34,16 +34,24 @@ public class Circle {
     }
 
 
-
-
-    public void getProjectionY() {
+    public String getProjectionY() {
         y1 = y - r;
         y2 = y + r;
-
-    }
-    public String print(){
         return "[" + y1 + ";" + y2 + "]";
 
+    }
+
+    public void print() {
+//        String s;
+//
+//        if (y != y1) {
+//
+//
+//        }
+//        if (x != x1) {
+//            s = "[" + x1 + ";" + x2 + "]";
+//        }
+//        return s;
     }
 }
 

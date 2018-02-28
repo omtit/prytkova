@@ -11,7 +11,7 @@ public class Task1953 {
         Step1();
         Step2();
 //        Step3();
-        Step4();
+   //     Step4();
     }
 
     private static void Step1(){
@@ -32,9 +32,9 @@ public class Task1953 {
 //        System.out.println(py.print());
 //    }
 
-    private static void Step4(){
-        Circle c = new Circle(100, 120, 31);
-        System.out.println(c.getProjectionX());
-        System.out.println(c.getProjectionY().print());
-    }
+//    private static void Step4(){
+//        Circle c = new Circle(100, 120, 31);
+//        System.out.println(c.getProjectionX().print());
+//        System.out.println(c.getProjectionY().print());
+//    }
 }
