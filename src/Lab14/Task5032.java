@@ -1,7 +1,7 @@
-package jfgjsgj;
+package Lab14;
 
 import Lab14.task5032.Rectangle5032;
-import common.Utils;
+import Lab14.task5032.Utils;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -16,7 +16,7 @@ public class Task5032 {
         System.out.println();
         System.out.println("5032");
         for (int i = 0; i < 14; i++) {
-            task5032(".\\task5032\\test" + (i + 1) + ".csv");
+            task5032(".\\res\\task5032\\test" + (i + 1) + ".csv");
         }
     }
 
@@ -30,7 +30,7 @@ public class Task5032 {
                 "<p>Результат:</p>";
             Utils.writeToHtml(filename + ".html", 500, 350, description, example.toString() + rect.toString());
         } catch (FileNotFoundException e) {
-            System.out.println("Файл не существует");
+            System.out.println("Файл не существует"+ target.getAbsolutePath());
         } catch (Exception e) {
             String description = "<p>Действий: " + rect.getCount() + "</p>" +
                 "<p>Ошибка: " + e.getMessage() + "</p>" +

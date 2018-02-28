@@ -27,17 +27,17 @@ public class Circle {
         return Math.PI * (r * r);
     }
 
-    public String getProjectionX() {
+    public Interval getProjectionX() {
         x1 = x - r;
         x2 = x + r;
-        return "[" + x1 + ";" + x2 + "]";
+        return new Interval(x1, x2) ;
     }
 
 
-    public String getProjectionY() {
+    public Interval getProjectionY() {
         y1 = y - r;
         y2 = y + r;
-        return "[" + y1 + ";" + y2 + "]";
+        return new Interval(y1, y2);
 
     }
 
