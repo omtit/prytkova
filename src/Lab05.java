@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 import static java.lang.System.*;
 
 /**
@@ -197,6 +200,21 @@ public class Lab05 {
 
         }
         return sb;
+    }
+
+    public static List<Double> task7991(double x, double y, double z){
+        List<Double> numbers;
+        numbers = new ArrayList<>();
+        if ( -3< x && x<5) {
+          numbers.add(x);
+        }
+        if (-3< y && y<5){
+            numbers.add(y);
+        }
+        if (-3<z && z<5) {
+            numbers.add(z);
+        }
+        return numbers;
     }
 
 }
